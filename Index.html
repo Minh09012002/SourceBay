@@ -1,0 +1,1798 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Font Awesome Free CDN -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+    <!-- Thêm Bootstrap CDN vào phần <head> -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="./assets/css/base.css" />
+    <link rel="stylesheet" href="./assets/css/main.css" />
+
+    <title>SourceBay</title>
+  </head>
+  <body>
+    <div class="wrap">
+      <!-- Header -->
+      <div class="header-top">
+        <div class="container header-nav">
+          <div class="header-top-left">
+            <div class="timeline-date">
+              <i class="fa-solid fa-cloud-sun"></i>
+              <span>Thứ 6, 20/26/2025</span>
+            </div>
+            <div class="social">
+              <a href="" class="facebook"
+                ><i class="fa-brands fa-facebook"></i
+              ></a>
+              <a class="whatsap"><i class="fa-brands fa-whatsapp"></i></a>
+              <a href="" class="instagram"
+                ><i class="fa-brands fa-instagram"></i
+              ></a>
+            </div>
+          </div>
+          <div class="login-signin">
+            <div class="sign-in">Đăng Kí</div>
+            <span class="divider">|</span>
+            <div class="login">Đăng Nhập</div>
+          </div>
+        </div>
+      </div>
+      <header>
+        <div class="header-menu-search">
+          <div class="site-header">
+            <div class="container header">
+              <div class="logo">
+                <a href=""
+                  ><img src="./assets/img/Logo_img_hjgk.png" alt="SourceBay"
+                /></a>
+                <div class="icon-menu-mobile" id="menu-btn">
+                  <i class="fa-solid fa-bars"></i>
+                </div>
+              </div>
+              <div class="search-bar">
+                <select class="category-dropdown">
+                  <option value="" disabled selected hidden>Danh Mục</option>
+                  <option>Asp.net</option>
+                  <option>Java</option>
+                  <option>Php & Mysql</option>
+                </select>
+                <input
+                  type="text"
+                  class="search-input"
+                  placeholder="Tìm kiếm ......."
+                />
+              </div>
+              <div class="header-actions">
+                <a href="#" class="btn btn-topup">
+                  <i class="fa-solid fa-money-bill-wave"></i> Nạp Tiền
+                </a>
+                <a href="#" class="btn btn-upload">
+                  <i class="fa-solid fa-cloud-upload-alt"></i> Tải Lên
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Menu -->
+          <nav class="menu" id="menu">
+            <div class="container">
+              <nav>
+                <ul class="menu-list">
+                  <li>
+                    <a href="./"><i class="fas fa-home"></i> Trang chủ</a>
+                  </li>
+                  <li>
+                    <a href="#"><i class="fas fa-bars"></i> Danh Mục</a>
+                    <ul class="dropdown">
+                      <li>
+                        <i class="fas fa-code"></i> <a href="#">Php & Mysql</a>
+                      </li>
+                      <li><i class="fas fa-code"></i><a href="#">NodeJs</a></li>
+                      <li><i class="fas fa-code"></i><a href="#">Java</a></li>
+                      <li><i class="fas fa-code"></i><a href="#">Python</a></li>
+                      <li><i class="fas fa-code"></i><a href="#">Mobile</a></li>
+                    </ul>
+                  </li>
+                  <li class="hot-badge">
+                    <a href="#" class="active">Top code</a>
+                  </li>
+                  <li><a href="#">Code chất lượng</a></li>
+                  <li><a href="#">Code tham khảo</a></li>
+                  <li class="hot-badge"><a href="#">Domain - Hosting</a></li>
+                  <li>
+                    <a href="#">Dịch vụ <i class="fas fa-caret-down"></i></a>
+                    <ul class="dropdown">
+                      <li><a href="#">Cài đặt webiste</a></li>
+                      <li><a href="#">Thiết kế website</a></li>
+                      <li><a href="#">Xây dựng hệ thống</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </nav>
+        </div>
+      </header>
+
+      <!-- content -->
+      <div class="main">
+        <div class="container">
+          <!-- Slider -->
+          <div class="main-content">
+            <section class="slider" aria-label="Main image slider">
+              <div
+                class="arrow left"
+                role="button"
+                tabindex="0"
+                aria-label="Previous slide"
+                id="prevBtn"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <polyline points="15 18 9 12 15 6"></polyline>
+                </svg>
+              </div>
+
+              <div
+                class="slides"
+                id="slidesContainer"
+                aria-live="polite"
+                aria-atomic="true"
+              >
+                <figure
+                  class="slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="CodeMarket Pro Slide 1"
+                >
+                  <img
+                    src="./assets/img/slider_ban_source_code_kiem_them_thu_nhap.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+                <figure
+                  class="slide"
+                  role="group"
+                  aria-roledescription="slide"
+                  aria-label="CodeMarket Pro Slide 1"
+                >
+                  <img
+                    src="./assets/img/slider_POP-UP-CODE_LARGE-2.jpg"
+                    alt=""
+                    srcset=""
+                  />
+                </figure>
+              </div>
+
+              <div
+                class="arrow right"
+                role="button"
+                tabindex="0"
+                aria-label="Next slide"
+                id="nextBtn"
+              >
+                <svg
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                  aria-hidden="true"
+                  focusable="false"
+                >
+                  <polyline points="9 18 15 12 9 6"></polyline>
+                </svg>
+              </div>
+            </section>
+            <!-- Activities -->
+            <div class="activity-panel" aria-label="Recent activity feed">
+              <div class="activity-header" tabindex="0">HOẠT ĐỘNG GẦN ĐÂY</div>
+              <div
+                class="activity-list"
+                tabindex="0"
+                aria-live="polite"
+                aria-relevant="additions"
+              >
+                <!-- Repeated activity items -->
+                <article class="activity-item">
+                  <div
+                    class="icon-container"
+                    aria-hidden="true"
+                    title="User icon"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#4b5563"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
+                      ></path>
+                      <path d="M4 20c0-4 8-4 8-4s8 0 8 4"></path>
+                    </svg>
+                  </div>
+                  <p class="activity-text">
+                    <strong>Quốc</strong> vừa trở thành thành viên mới của
+                    SourceBay
+                  </p>
+                </article>
+                <article class="activity-item">
+                  <div
+                    class="icon-container"
+                    aria-hidden="true"
+                    title="User icon"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#4b5563"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
+                      ></path>
+                      <path d="M4 20c0-4 8-4 8-4s8 0 8 4"></path>
+                    </svg>
+                  </div>
+                  <p class="activity-text">
+                    <strong>Quốc</strong> vừa trở thành thành viên mới của
+                    SourceBay
+                  </p>
+                </article>
+                <article class="activity-item">
+                  <div
+                    class="icon-container"
+                    aria-hidden="true"
+                    title="User icon"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#4b5563"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
+                      ></path>
+                      <path d="M4 20c0-4 8-4 8-4s8 0 8 4"></path>
+                    </svg>
+                  </div>
+                  <p class="activity-text">
+                    <strong>Quốc</strong> vừa trở thành thành viên mới của
+                    SourceBay
+                  </p>
+                </article>
+                <article class="activity-item">
+                  <div
+                    class="icon-container"
+                    aria-hidden="true"
+                    title="User icon"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#4b5563"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
+                      ></path>
+                      <path d="M4 20c0-4 8-4 8-4s8 0 8 4"></path>
+                    </svg>
+                  </div>
+                  <p class="activity-text">
+                    <strong>Quốc</strong> vừa trở thành thành viên mới của
+                    SourceBay
+                  </p>
+                </article>
+                <article class="activity-item">
+                  <div
+                    class="icon-container"
+                    aria-hidden="true"
+                    title="User icon"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#4b5563"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
+                      ></path>
+                      <path d="M4 20c0-4 8-4 8-4s8 0 8 4"></path>
+                    </svg>
+                  </div>
+                  <p class="activity-text">
+                    <strong>Quốc</strong> vừa trở thành thành viên mới của
+                    SourceBay
+                  </p>
+                </article>
+                <article class="activity-item">
+                  <div
+                    class="icon-container"
+                    aria-hidden="true"
+                    title="User icon"
+                  >
+                    <svg
+                      fill="none"
+                      stroke="#4b5563"
+                      viewBox="0 0 24 24"
+                      aria-hidden="true"
+                      focusable="false"
+                    >
+                      <path
+                        d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4z"
+                      ></path>
+                      <path d="M4 20c0-4 8-4 8-4s8 0 8 4"></path>
+                    </svg>
+                  </div>
+                  <p class="activity-text">
+                    <strong>Quốc</strong> vừa trở thành thành viên mới của
+                    SourceBay
+                  </p>
+                </article>
+              </div>
+            </div>
+          </div>
+
+          <!-- service -->
+          <div class="main-service">
+            <div class="features">
+              <div class="feature-item">
+                <!-- <img src="./icons/coins.svg" alt="Thu nhập tự động" /> -->
+                <div class="feature-icon">
+                  <i class="fas fa-coins"></i>
+                </div>
+                <div class="feature-title">
+                  <h3>THU NHẬP TỰ ĐỘNG</h3>
+                  <p>Bạn có code hãy upload ngay</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-comments"></i>
+                </div>
+                <div class="feature-title">
+                  <h3>HỖ TRỢ NHANH 24/7</h3>
+                  <p>Tư vấn & Hỗ trợ</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-code"></i>
+                </div>
+                <div class="feature-title">
+                  <h3>MÃ NGUỒN CHẤT LƯỢNG</h3>
+                  <p>Kho đa dạng & Phong phú</p>
+                </div>
+              </div>
+              <div class="feature-item">
+                <div class="feature-icon">
+                  <i class="fas fa-wallet"></i>
+                </div>
+                <div class="feature-title">
+                  <h3>GIAO DỊCH NHANH</h3>
+                  <p>Nạp và rút tiền nhanh chóng</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- Product mới nhất -->
+          <div class="main-product">
+            <div class="main-product-content">
+              <div class="section-title">SOURCECODE MỚI NHẤT</div>
+              <div class="row">
+                <!-- Card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="pagination">
+                <button class="active">1</button>
+                <button>2</button>
+                <button>3</button>
+                <button>4</button>
+                <button>5</button>
+                <button>6</button>
+                <button><i class="fa-solid fa-angles-right"></i></button>
+                <button>Trang Cuối</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- website nổi bật -->
+          <div class="main-product">
+            <div class="main-product-content">
+              <div class="section-title">Website nổi bật</div>
+              <div class="row">
+                <!-- Card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Xem thêm -->
+              <div class="btn see-more">
+                <a href="#">Xem Thêm &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Ứng dụng - app nổi bật -->
+          <div class="main-product">
+            <div class="main-product-content">
+              <div class="section-title">ứng dụng - app nổi bật</div>
+              <div class="row">
+                <!-- Card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Xem thêm -->
+              <div class="btn see-more">
+                <a href="#">Xem Thêm &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Game nổi bật -->
+          <div class="main-product">
+            <div class="main-product-content">
+              <div class="section-title">Game nổi bật</div>
+              <div class="row">
+                <!-- Card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Xem thêm -->
+              <div class="btn see-more">
+                <a href="#">Xem Thêm &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Tự động hóa  -->
+          <div class="main-product">
+            <div class="main-product-content">
+              <div class="section-title">Tự động hóa - automation</div>
+              <div class="row">
+                <!-- Card -->
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-12 col-md-6 col-lg-3 mb-3">
+                  <div class="card">
+                    <img src="./assets/img/sản phẩm.png" alt="Thumbnail" />
+                    <div class="card-icons">
+                      <i class="fa-regular fa-heart"></i>
+                      <i class="fa-solid fa-download"></i>
+                      <i class="fa-regular fa-eye"></i>
+                    </div>
+                    <div class="card-body">
+                      <div class="card-language">
+                        <i class="fa-solid fa-bookmark"></i>
+                        <span class="tag">ASP.NET</span>
+                      </div>
+
+                      <div class="title">
+                        Chia sẻ source code website bán thực phẩm sạch organic
+                        food có thanh toán VnPay + xuất hóa đơn
+                      </div>
+                      <div class="price">500.000đ</div>
+                      <div class="rating">
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-solid fa-star"></i>
+                        <i class="fa-regular fa-star"></i>
+                        <span>1 Đánh giá</span>
+                      </div>
+                      <div class="author">
+                        <!-- <i class="fa-solid fa-user-circle"></i>  -->
+                        <img src="./assets/img/user.png" alt="" />
+                        Nguyễn Văn A
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- Xem thêm -->
+              <div class="btn see-more">
+                <a href="#">Xem Thêm &raquo;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- Dịch vụ máy chủ  -->
+          <!-- Tự động hóa  -->
+          <div class="main-product">
+            <div class="main-product-content">
+              <div class="section-title">Dịch vụ máy chủ</div>
+              <div class="main-server">
+                <div class="row">
+                  <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="plan card text-center h-100">
+                      <div class="img">
+                        <img
+                          src="./assets/img/máy chủ.png"
+                          class="card-img-top"
+                          alt=""
+                        />
+                      </div>
+                      <div class="price-circle my-3">
+                        <div class="price h5">25.000 đ</div>
+                        <div class="unit text-muted">/ Tháng</div>
+                      </div>
+                      <div class="features card-body">
+                        <ul class="list-unstyled">
+                          <li>Dung lượng: <span>300 MB [SSD]</span></li>
+                          <li>Băng Thông: <span>unlimited</span></li>
+                          <li>Sub-domain: <span>10</span></li>
+                          <li>Email: <span>10</span></li>
+                          <li>FTP: <span>unlimited</span></li>
+                          <li>Database: <span>1</span></li>
+                          <li>Addon domain: <span>0</span></li>
+                          <li>Park domain: <span>3</span></li>
+                        </ul>
+                      </div>
+                      <div class="btn btn-service mb-3">
+                        <a href="#">Mua Ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="plan card text-center h-100">
+                      <div class="img">
+                        <img
+                          src="./assets/img/máy chủ.png"
+                          class="card-img-top"
+                          alt=""
+                        />
+                      </div>
+                      <div class="price-circle my-3">
+                        <div class="price h5">25.000 đ</div>
+                        <div class="unit text-muted">/ Tháng</div>
+                      </div>
+                      <div class="features card-body">
+                        <ul class="list-unstyled">
+                          <li>Dung lượng: <span>300 MB [SSD]</span></li>
+                          <li>Băng Thông: <span>unlimited</span></li>
+                          <li>Sub-domain: <span>10</span></li>
+                          <li>Email: <span>10</span></li>
+                          <li>FTP: <span>unlimited</span></li>
+                          <li>Database: <span>1</span></li>
+                          <li>Addon domain: <span>0</span></li>
+                          <li>Park domain: <span>3</span></li>
+                        </ul>
+                      </div>
+                      <div class="btn btn-service mb-3">
+                        <a href="#">Mua Ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="col-12 col-md-6 col-lg-4 mb-3">
+                    <div class="plan card text-center h-100">
+                      <div class="img">
+                        <img
+                          src="./assets/img/máy chủ.png"
+                          class="card-img-top"
+                          alt=""
+                        />
+                      </div>
+                      <div class="price-circle my-3">
+                        <div class="price h5">25.000 đ</div>
+                        <div class="unit text-muted">/ Tháng</div>
+                      </div>
+                      <div class="features card-body">
+                        <ul class="list-unstyled">
+                          <li>Dung lượng: <span>300 MB [SSD]</span></li>
+                          <li>Băng Thông: <span>unlimited</span></li>
+                          <li>Sub-domain: <span>10</span></li>
+                          <li>Email: <span>10</span></li>
+                          <li>FTP: <span>unlimited</span></li>
+                          <li>Database: <span>1</span></li>
+                          <li>Addon domain: <span>0</span></li>
+                          <li>Park domain: <span>3</span></li>
+                        </ul>
+                      </div>
+                      <div class="btn btn-service mb-3">
+                        <a href="#">Mua Ngay</a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="options">
+                <a href="#" class="option"
+                  ><i class="fa-solid fa-globe"></i>ĐĂNG KÍ TÊN MIỀN</a
+                >
+                <a href="#" class="option"
+                  ><i class="fa-solid fa-cloud"></i>CLOUD VPS</a
+                >
+                <a href="#" class="option"
+                  ><i class="fa-regular fa-envelope"></i>EMAIL SERVER</a
+                >
+                <a href="#" class="option"
+                  ><i class="fa-solid fa-lock"></i>CHỨNG THỰC SSL</a
+                >
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- footer -->
+
+      <footer class="site-footer">
+        <div class="container footer">
+          <!-- Column 1: About -->
+          <div class="column footer-about">
+            <h3>VỀ CHÚNG TÔI</h3>
+            <img src="./assets/img/Logo.png" alt="SourceBay Logo" />
+            <p>SourceBay chuyên cung cấp những dịch vụ tốt nhất cho bạn</p>
+            <div class="contact">
+              EMAIL: v@gmail.com<br />
+              SDT&nbsp;&nbsp;&nbsp;: 0379982055
+            </div>
+          </div>
+
+          <!-- Column 2: Hướng dẫn -->
+          <div class="column">
+            <h3>HƯỚNG DẪN</h3>
+            <a href="#">Giới thiệu</a>
+            <a href="#">Chính Sách Bảo Mật</a>
+            <a href="#">Hướng Dẫn</a>
+            <a href="#">Tìm kiếm code</a>
+            <a href="#">Hướng Dẫn Đăng Bán Code</a>
+            <a href="#">Hướng Dẫn Làm Nhiệm Vụ</a>
+            <a href="#">Điểm Danh</a>
+            <a href="#">Hướng Dẫn Nạp, Rút tiền</a>
+            <a href="#">Liên hệ, Hỗ trợ</a>
+          </div>
+
+          <!-- Column 3: Dịch vụ Website -->
+          <div class="column">
+            <h3>DỊCH VỤ WEBSITE</h3>
+            <a href="#">Thiết Kế Website Thời Trang</a>
+            <a href="#">Thiết Kế Web Doanh Nghiệp</a>
+            <a href="#">Thiết Kế Web Bất Động Sản</a>
+            <a href="#">Thiết Kế Web Thương mại Điện tử</a>
+            <a href="#">Thiết Kế Web Giá Rẻ</a>
+            <a href="#">Thiết Kế Web Đẹp</a>
+            <a href="#">Thiết Kế Web Bán Hàng</a>
+          </div>
+
+          <!-- Column 4: Dịch vụ Máy chủ -->
+          <div class="column">
+            <h3>DỊCH VỤ MÁY CHỦ</h3>
+            <a href="#">Đăng kí tên miền</a>
+            <a href="#">Hosting SSD</a>
+            <a href="#">Cloud VPS</a>
+            <a href="#">Email Server</a>
+            <a href="#">Chứng thực SSL</a>
+          </div>
+        </div>
+
+        <div class="copyright">&copy; Copyright SourceBay.com</div>
+      </footer>
+
+      <!-- nút cuộn trang -->
+      <button id="scrollToTopBtn" title="Go to top">↑</button>
+
+      <!-- nút zalo -->
+      <div class="icon-zalo-mess">
+        <div
+          class="floating-btn zalo-btn"
+          onclick="window.open('https://zalo.me', '_blank')"
+        >
+          <img src="./assets/img/Icon_of_Zalo.svg.png" alt="Zalo Logo" />
+        </div>
+
+        <!-- Nút Messenger -->
+        <div
+          class="floating-btn messenger-btn"
+          onclick="window.open('https://m.me', '_blank')"
+        >
+          <img
+            src="./assets/img/Facebook_Messenger_logo_2020.svg.webp"
+            alt="Messenger Logo"
+          />
+        </div>
+      </div>
+    </div>
+
+    <script src="./assets/js/Home.js"></script>
+  </body>
+</html>
